@@ -1,41 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
 </head>
+
 <body>
-    
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="logo.png" class="logo">
+    <div class="header">
+        <img src="logo.png" class="logo">
+        <div class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">Skills</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
-        <div class="header-text">
-            <p>Software Developer</p>
-            <h1>Hi, I am <span>Bhumika</span> Pal</h1>
         </div>
     </div>
-</div>
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1"></div>
-            <div class="about-col-2"></div>
+    <section class="home">
+        <img src="Bhumika.png" class="profile-pic" alt="my  photo">
+        <div class="home-content">
+            <p>Web Developer </p>
+            <h1>Hi, I am <span>Bhumika Pal</span></h1>
+            <h3>I am afresher web developer who<br>loves crafting clean,<br>user-friendly and responsive interfaces.
+            </h3>
+        </div>
+    </section>
+    <!-- about me -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aboutme.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">Hi! I'm Bhumika Pal, a passionate and dedicated Web Developer eager to create clean,
+                        user-friendly, and responsive websites. As a fresher, I bring strong foundational knowledge of
+                        HTML, CSS, JavaScript, and ReactJS, along with a curiosity to learn and grow in the tech
+                        industry.<br>
+                        I'm currently expanding my skills in full-stack development (MERN Stack) and building real-world
+                        projects to strengthen my understanding. I'm a quick learner, a team player, and always excited
+                        to solve problems through code.<br>
+
+                        My goal is to contribute to impactful projects, collaborate with like-minded developers, and
+                        continue evolving as a software professional.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">skills</p>
+                        <p class="tab-links">Experience</p>
+                        <p class="tab-links">Education</p>
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>HTML</span>
+                            <li><span>CSS</span>
+                            <li><span>Javascript</span>
+                            <li><span>DSA</span>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
 
-    <script src="portfolio.js"></script>
 </body>
+
 </html>
