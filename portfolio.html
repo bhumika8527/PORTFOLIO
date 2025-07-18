@@ -38,7 +38,7 @@
                     <img src="aboutme.png">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
+                    <h1 class="sub-title1">About Me</h1>
                     <p class="para">Hi! I'm Bhumika Pal, a passionate and dedicated Web Developer eager to create clean,
                         user-friendly, and responsive websites. As a fresher, I bring strong foundational knowledge of
                         HTML, CSS, JavaScript, and ReactJS, along with a curiosity to learn and grow in the tech
@@ -51,23 +51,49 @@
                         continue evolving as a software professional.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-links" onclick="opentab('Education')">Education</p>
                     </div>
-                    <div class="tab-contents">
-                        <ul>
-                            <li><span>HTML</span>
-                            <li><span>CSS</span>
-                            <li><span>Javascript</span>
-                            <li><span>DSA</span>
-                        </ul>
-                    </div>
+                  <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>Javascript</span></li>
+                        <li><span>ExpressJs</span></li>
+                        <li><span>ReactJS</span></li>
+                    </ul>
+                    <div class="tab-contents" id="EDucation">
+                    <ul>
+                     <br>   <li><span>2021-2025</span><br>ITS Engineering college<br>CGPA:7.61</li>
+                        <li><span>2021- class 12</span><br>STDBV <br>79%</li>
+                        <li><span>2019 -class 10</span><br>STDBV <br>89%</li>
+                    </ul>
+</div>
+
+                  </div>
 
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+    <script>
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-links");
+    }
+     for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-links");
+    }
+}
+
+
+    </script>
 
 
 </body>
