@@ -142,4 +142,8 @@ body{
     width: 50%;
 
 }
+.tab-contents ul li span{
+    color: rgb(179, 35, 59);
+    font-size: 14px;
+}
    
