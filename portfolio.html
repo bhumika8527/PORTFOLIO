@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,51 +52,61 @@
                         continue evolving as a software professional.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links active-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                     </div>
-                  <div class="tab-contents active-tab" id="Skills">
+                  <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>HTML</span></li>
                         <li><span>CSS</span></li>
                         <li><span>Javascript</span></li>
                         <li><span>ExpressJs</span></li>
                         <li><span>ReactJS</span></li>
-                    </ul>
-                    <div class="tab-contents" id="EDucation">
+                    </ul></div>
+                    <div class="tab-contents" id="education">
                     <ul>
-                     <br>   <li><span>2021-2025</span><br>ITS Engineering college<br>CGPA:7.61</li>
+                     <br> <li><span>2021-2025</span><br>ITS Engineering college<br>CGPA:7.61</li>
                         <li><span>2021- class 12</span><br>STDBV <br>79%</li>
                         <li><span>2019 -class 10</span><br>STDBV <br>89%</li>
                     </ul>
-</div>
-
-                  </div>
-
+                   </div>
                 </div>
             </div>
         </div>
     </div>
+<!----------------Projects-------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+           <div>
+            <i class="fas fa-code"></i>
+            <h2>Project 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore, praesentium magnam suscipit est, laboriosam </p>
+            <a href="#">learn more</a>
+           </div>
+            <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Project 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore, praesentium magnam suscipit est, laboriosam .</p>
+            <a href="#">learn more</a>
+           </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+            <h2>Project 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore, praesentium magnam suscipit est, laboriosam impedit quis numquam magni  quod.</p>
+            <a href="#">learn more</a>
+           </div>
+
+        </div>
+    </div>
+</div>
 
 
 
 
-    <script>
-var tablinks=document.getElementsByClassName("tab-links");
-var tabcontents=document.getElementsByClassName("tab-contents");
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-links");
-    }
-     for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-links");
-    }
-}
 
-
-    </script>
-
-
+    <script src="portfolio.js"></script>
 </body>
 
 </html>
