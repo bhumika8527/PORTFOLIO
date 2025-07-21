@@ -4,45 +4,53 @@
     font-family:"poppins",sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     background-color: black;
     color: white;
 }
- .header{
-    position: relative; /* to unfixed the home section  */
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    
-     
-
+ #header{
+    width:100%;
+    height:100vh;
+    /* background-image: url(Bhumika.png); */
+    background-size: cover;
+    background-position: center;
  }
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
  .logo{
     position: relative;  
     text-decoration: none;
     width: 180px;
+    margin-left: 60px;
  }
- .navbar ul li {
+ nav ul li {
      display: inline-block; 
     list-style: none;
     margin: 10px 20px;
+    margin-right: 20px;
+
  }
  
-.navbar ul li a {
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 20 px;
-     margin: 10px;
+    font-size: 30 px;
+     margin: 20px;
      position:relative ;
 
  }
- .navbar ul li a::after{
+ nav ul li a::after{
     content: '';
     width:0;
     height: 3px;
@@ -52,7 +60,7 @@ body{
     bottom: -6px;
     transition: 0.5s;
  }
-.navbar ul li a:hover::after{
+nav ul li a:hover::after{
     width: 100%;
 }
 .home{ 
@@ -69,15 +77,17 @@ body{
      
 }
 .profile-pic {
-    height: 500px; /* adjust as needed */
+    height: 600px; /* adjust as needed */
     object-fit: cover;
     border-radius: 30px;
+  
 }
 
 
 .home-content{
     margin-top: 60px;
     font-size: 30px;
+    margin-left: 10%;
 }
 .home-content h1 {
     font-size: 60px;
@@ -320,5 +330,73 @@ form btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
-
 }
+                  /* css for small screen */
+nav .fas{
+    display: none;
+}
+
+ @media only screen and (max-width: 600px) {
+   .header-text{
+    margin-top: 100%;
+    font-size: 16px;
+
+   }
+   .header-text h1{
+    font-size: 30px;
+   }
+   nav .fas{
+    display: block;
+    font-size: 25px;
+   }
+   nav ul{
+    background: blue;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+   }
+
+   nav ul li {
+    display: block;
+    margin-top:25px ;
+   }
+   nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+   }
+   .sub-title1{
+    font-size: 40px;
+
+   }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+ }
+ #msg{
+    color: #61b752;
+    margin-top: -20px;
+    display: block;
+ }
